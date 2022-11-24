@@ -112,6 +112,7 @@ def create_template_zip(env, js, wasm, worker, side):
         ZIPROOT=zip_dir,
         ZIPSUFFIX="${PROGSUFFIX}${ZIPSUFFIX}",
         ZIPCOMSTR="Archiving $SOURCES as $TARGET",
+        ZIP_OVERRIDE_TIMESTAMP=(1980, 1, 1, 0, 0, 0),
     )
 
 
